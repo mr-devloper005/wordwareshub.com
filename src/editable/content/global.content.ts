@@ -3,16 +3,16 @@ import { slot4BrandConfig } from '@/editable/theme/brand.config'
 export const globalContent = {
   site: {
     name: slot4BrandConfig.siteName,
-    tagline: slot4BrandConfig.tagline || 'Independent reading platform',
+    tagline: slot4BrandConfig.tagline || '',
     domain: slot4BrandConfig.domain,
     baseUrl: slot4BrandConfig.baseUrl,
   },
   nav: {
-    tagline: 'Independent reading platform',
+    tagline: 'Independent journal and editorial publication',
     primaryLinks: [
-      { label: 'Articles', href: '/articles' },
-      { label: 'Visuals', href: '/image-sharing' },
-      { label: 'Listings', href: '/listings' },
+      { label: 'Articles', href: '/article' },
+      { label: 'Visuals', href: '/image' },
+      { label: 'Listings', href: '/listing' },
       { label: 'Contact', href: '/contact' },
     ],
     actions: {
@@ -21,15 +21,15 @@ export const globalContent = {
     },
   },
   footer: {
-    tagline: 'Stories, resources, and discoverable posts',
-    description: 'A connected publishing surface for articles, visuals, listings, profiles, bookmarks, and downloadable resources.',
+    tagline: 'Editorial stories, analysis, visuals, and references',
+    description: 'A publication platform built for thoughtful reading across features, commentary, visual stories, profiles, and reference material.',
     columns: [
       {
         title: 'Explore',
         links: [
-          { label: 'Articles', href: '/articles' },
-          { label: 'Listings', href: '/listings' },
-          { label: 'Images', href: '/image-sharing' },
+          { label: 'Articles', href: '/article' },
+          { label: 'Listings', href: '/listing' },
+          { label: 'Images', href: '/image' },
           { label: 'PDF Library', href: '/pdf' },
         ],
       },
@@ -38,12 +38,10 @@ export const globalContent = {
         links: [
           { label: 'About', href: '/about' },
           { label: 'Contact', href: '/contact' },
-          { label: 'Privacy', href: '/privacy' },
-          { label: 'Terms', href: '/terms' },
         ],
       },
     ],
-    bottomNote: 'Built for clean discovery and connected publishing.',
+    bottomNote: 'Built as an independent article publication.',
   },
   commonLabels: {
     readMore: 'Read more',
