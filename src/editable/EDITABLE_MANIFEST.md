@@ -75,3 +75,5 @@ Rules for AI edits:
 - Prefer editing sections/cards instead of touching fetch logic.
 
 - `src/editable/theme/editable-global.css` - full-site background, selection, scrollbar, and article-global visual CSS.
+
+Final automation smoke test for wordwareshub.com at 2026-05-31T15:49:51Z.
