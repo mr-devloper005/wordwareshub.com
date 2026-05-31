@@ -12,9 +12,11 @@
 */
 
 body {
+  font-family: 'PT Sans', ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif !important;
   background-color: var(--slot4-page-bg) !important;
   color: var(--slot4-page-text) !important;
   background-image: var(--slot4-body-gradient) !important;
+  background-attachment: fixed !important;
 }
 
 ::selection {
@@ -39,6 +41,83 @@ body {
   color: var(--slot4-accent);
 }
 
+.article-content h3 {
+  color: color-mix(in oklab, var(--slot4-page-text) 82%, var(--slot4-accent));
+}
+
 .article-content a {
   color: var(--slot4-accent-fill);
+}
+
+.article-content img,
+.article-content iframe,
+.article-content video {
+  display: block;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+}
+
+.article-content table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Search page redesign (scoped by unique search input placeholder). */
+main:has(input[placeholder="Search across tasks..."]) {
+  position: relative;
+}
+
+main:has(input[placeholder="Search across tasks..."]) > * {
+  border-radius: 2rem;
+}
+
+main:has(input[placeholder="Search across tasks..."]) h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+main:has(input[placeholder="Search across tasks..."]) p {
+  color: var(--slot4-muted-text);
+}
+
+main:has(input[placeholder="Search across tasks..."]) form[action="/search"] {
+  border: 1px solid color-mix(in oklab, var(--slot4-page-text) 14%, transparent);
+  border-radius: 999px;
+  padding: 0.45rem;
+  background: color-mix(in oklab, white 72%, var(--slot4-panel-bg));
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+}
+
+main:has(input[placeholder="Search across tasks..."]) form[action="/search"] input[name="q"] {
+  border-radius: 999px;
+  border: 0;
+  background: transparent;
+}
+
+main:has(input[placeholder="Search across tasks..."]) form[action="/search"] button[type="submit"] {
+  border-radius: 999px;
+  background: var(--slot4-dark-bg);
+  color: var(--slot4-dark-text);
+  border: 0;
+  font-weight: 800;
+}
+
+main:has(input[placeholder="Search across tasks..."]) .grid {
+  gap: 1.25rem;
+}
+
+main:has(input[placeholder="Search across tasks..."]) .grid > * {
+  border: 1px solid color-mix(in oklab, var(--slot4-page-text) 10%, transparent);
+  border-radius: 1.4rem;
+  background: color-mix(in oklab, white 82%, var(--slot4-page-bg));
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+main:has(input[placeholder="Search across tasks..."]) .grid > *:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
 }
