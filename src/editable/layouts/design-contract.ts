@@ -1,14 +1,15 @@
 import type { CSSProperties } from 'react'
 
 export const editableRootStyle = {
+  '--editable-container': '1280px',
   '--slot4-page-bg': '#f6f4e8',
   '--slot4-page-text': '#18211d',
   '--slot4-panel-bg': '#e5eee4',
   '--slot4-surface-bg': '#ffffff',
-  '--slot4-muted-text': '#3d4b45',
-  '--slot4-soft-muted-text': '#5f7069',
-  '--slot4-accent': '#dc9b9b',
-  '--slot4-accent-fill': '#dc9b9b',
+  '--slot4-muted-text': '#2a3630',
+  '--slot4-soft-muted-text': '#3d4b45',
+  '--slot4-accent': '#b56e6e',
+  '--slot4-accent-fill': '#b56e6e',
   '--slot4-accent-soft': '#c0e1d2',
   '--slot4-dark-bg': '#1f2b27',
   '--slot4-dark-text': '#f6f4e8',

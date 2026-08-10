@@ -14,10 +14,10 @@ export const slot4BrandConfig = {
   ogImage: siteIdentity.ogImage,
   accents:
     productKind === 'visual'
-      ? { primary: '#DC9B9B', surface: '#F6F4E8' }
+      ? { primary: '#b56e6e', surface: '#F6F4E8' }
       : productKind === 'editorial'
-        ? { primary: '#DC9B9B', surface: '#F6F4E8' }
+        ? { primary: '#b56e6e', surface: '#F6F4E8' }
         : productKind === 'directory'
-          ? { primary: '#DC9B9B', surface: '#F6F4E8' }
-          : { primary: '#DC9B9B', surface: '#F6F4E8' },
+          ? { primary: '#b56e6e', surface: '#F6F4E8' }
+          : { primary: '#b56e6e', surface: '#F6F4E8' },
 } as const
